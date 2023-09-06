@@ -1,0 +1,15 @@
+Factory Design Pattern
+
+we create  object without exposing the creating logic to the client and refer to the newly
+created object using common interface
+
+
+DAO - data access Object Pattern
+It is used to seperate low level data accessing API FROM high level business layer
+
+Model- Simple POJO class - getter/setter Functions to stpre data retreuved using DAO
+
+DAO interface- it defineds standard operattion to be performed on model object
+
+POJO -plain old java object
+
