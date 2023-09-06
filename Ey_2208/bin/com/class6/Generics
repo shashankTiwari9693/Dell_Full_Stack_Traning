@@ -1,0 +1,24 @@
+jdk 1.5 Type Saftey of the Object
+Type casting should not be required
+
+Before Genreics we could store any kind of object in collection Now we force programmers to store only specific types of object
+
+
+Advantage:
+Type Safety-Hold only single type of object
+Type Casting-not required- no need to cast the object
+Compile time Checking-checked at compile time itself.
+
+
+Generalized Class
+Genrelaized Method
+?- wildCard Character
+Unbound wildCard
+Lowerbound WildCard
+Upperbound WildCard
+
+ClassCast exception
+
+
+
+Method Reference ::

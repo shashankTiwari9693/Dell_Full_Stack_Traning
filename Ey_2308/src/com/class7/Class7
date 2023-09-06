@@ -1,0 +1,36 @@
+What is Thread?
+thread is the most lightweight subprocess which is the smallest unit of process
+
+CPU does not allocate any memory area to threads so treads save memory and context switching between threads takes very less time
+
+New - when you create new instance of Thread before invocation of start method
+
+Runnable - after invocation of start() but thread schedule has not selected yet
+Running- running state when thread scheduler picks up the thread 
+Non Runnable - When thread is still alive but not eligible to run
+Terminated- dead state when run method exits or finishes.
+
+
+Synchronization is a mechanism where we want only thread to access the shared resource at one point in Time
+
+To Prevent thread interference
+To prevent inConsistency Problem
+
+
+Rentrant Thread/Monitor
+Threads or Monitors are re-enterant
+Which meand thread can use same monitor or lock for diffrent synchronized method is called from another menthod
+
+Adantages:
+eliminates the possible of singkle thread dea
+
+deadlock
+
+
+
+Concurrency introduced the concept of execeterService as as higher level replacement if workuing with threads directly
+
+executor are capable of running asynchronous task and can manage a pool of threads so we dont have to create anew thread manually
+
+
+
