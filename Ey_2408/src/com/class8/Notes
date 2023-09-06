@@ -1,0 +1,10 @@
+Streams are not designed for storing objects
+Streams are designed for performing Operations on group of objects
+
+Anything you do with stream,the original Object will always remain intact
+
+Streams can only be used once
+
+map methods takes function as arguments like our case we calling toUppercase(
+
+purpose of map us to create new object also so we don't modify the existing collection object

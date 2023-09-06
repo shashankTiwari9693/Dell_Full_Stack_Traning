@@ -1,0 +1,31 @@
+Regex or regular expression
+gives you APIs to define pattern for searching or manipulating String.
+
+\\s+
+
+java.util.regex*
+
+
+validate input string against pattern/regex
+
+classes
+Character
+MetaCharacter
+Quantifier
+
+
+split function
+subString function
+
+
+Doubly LinkedList
+Each node has pointers pointing to previous and next node
+Doubly linked list can be traveres easily in forward and backward direction
+
+you can easily add the new node by changing the pointer for delete,since you have to previous and next pointer, we dont need to 
+traverse the whole llist to find the previous node opposite to the case of singlly linked list
+
+Each elements of Linked List is called as NODE
+
+one Disadvantage:
+Since there is one extra pointer,additional memory is required to store the pointer along with the next pointer and data item 
