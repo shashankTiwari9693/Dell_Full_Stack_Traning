@@ -11,9 +11,9 @@ public class HomeController {
     return "index";
 }
 @GetMapping("/goToSearch")
-public String showSearchPage()
-{
-    System.out.println("Showing Search Page to User");
-return "search";
-}
+    public String showSearchPage()
+    {
+        System.out.println("Showing Search Page to User");
+    return "search";
+    }
 }

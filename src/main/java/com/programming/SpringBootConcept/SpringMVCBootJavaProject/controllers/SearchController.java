@@ -16,6 +16,7 @@ public class SearchController {
 
     @Autowired
     private ProductRepository productRepository;
+
     @GetMapping("/search")
     public String searchPage(@RequestParam("search") String search, Model model){
         System.out.println("In Search Controller");
@@ -23,7 +24,7 @@ public class SearchController {
 
         List<Product> products = new ArrayList<>();
         products =productRepository.searchByName(search);
-        model.addAttribute("product",products);
+        model.addAttribute("products",products);
         return "search";
     }
 

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -33,7 +34,7 @@
 		<header class="imageheader"></header>
 		<div class="container">
 			<h2 class="headline">Search Products</h2>
-			<form action="/" method="get">
+			<form action="/search" method="get">
 				<label class="card-title">Search your product</label>
 				 <input path="search" name="search" value="">
 			    <input type="submit" value="Search">
@@ -41,22 +42,21 @@
 		</div>
 	</section>
 	<!-- guarantee -->
-
+            <c:if test="${!empty(products)}">
     		<section id="products" class="section">
-
-    		<div class="productContainer">
+            <c:forEach var="product" items="${products}">
+            <div class="productContainer">
                            
             				<div class="productContainerItem">
-            					<img id="pic1" src="#">
+            					<img id="pic1" src="${product.imagePath}">
             					<input type="text" name="product"
-            						value="#"><br />
+            						value="${product.name}"><br />
 
             				</div>
-                        
-
             		</div>
-           
+            		</c:forEach>
             </section>
+            </c:if>
 
 	<section id="history" class="section">
 		<div class="container">
