@@ -2,15 +2,24 @@ package com.programming.SpringBootConcept.SpringMVCBootJavaProject.beans;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
+import jakarta.validation.constraints.Size;
 
 @Entity
 public class User {
     @Id
     private int id;
+    @Size(min=6,message = "{user.not.right}")
     private String username;
+    @Pattern(regexp = "((?=,*[A-Z]).{6,10})",message="Password should be capital and between 6 and 10 character")
     private String password;
     private String gender;
+
+    @NotNull(message = "Activity can not be null")
     private String activity;
+
 
     public String getFirst_name() {
         return first_name;
@@ -27,9 +36,10 @@ public class User {
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
-
+    @NotEmpty(message = "First names can not be empty")
     private String first_name;
     private String last_name;
+
     private String dateOfBirth;
 
     public int getId() {
