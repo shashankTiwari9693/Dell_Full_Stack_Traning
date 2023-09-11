@@ -15,4 +15,8 @@ public interface ProductRepository  extends CrudRepository<Product,Integer> {
     @Query("select p from Product p where p.name like %:name%")
     public List<Product> searchByName(@Param("name")String name);
 
+    @Query("select p from Product p where p.image_path like %:image_path%")
+    public List<Product> searchByImagePath(@Param("image_path")String image_path);
+
+
 }

@@ -8,7 +8,16 @@ public class Product {
     @Id
 private int id;
 private String name;
-private String imagePath;
+
+    public String getImage_path() {
+        return image_path;
+    }
+
+    public void setImage_path(String image_path) {
+        this.image_path = image_path;
+    }
+
+    private String image_path;
 
 
     public int getId() {
@@ -27,11 +36,5 @@ private String imagePath;
         this.name = name;
     }
 
-    public String getImagePath() {
-        return imagePath;
-    }
 
-    public void setImagePath(String imagePath) {
-        this.imagePath = imagePath;
-    }
 }
